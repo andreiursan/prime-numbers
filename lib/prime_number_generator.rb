@@ -9,7 +9,6 @@ class PrimeNumberGenerator
   end
 
   def is_prime? number
-    return true  if number == 17
-    return false if number == 18
+    @strategy.is_prime? number
   end
 end
