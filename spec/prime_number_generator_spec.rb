@@ -1,7 +1,14 @@
 require 'spec_helper'
 
 describe PrimeNumberGenerator do
-	it "should respond to message generate" 
+
+	before(:all) do
+		@prime_generator = PrimeNumberGenerator.new
+	end
+
+	it "should respond to message generate" do
+		@prime_generator.should respond_to(:generate)
+	end
 
 	it "should respond to message is_prime?"
 
@@ -10,5 +17,5 @@ describe PrimeNumberGenerator do
 	it "should return true for a prime number (17)"
 
 	it "should return false if a number isn't prime (18)"
-	
+
 end
