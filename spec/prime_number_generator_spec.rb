@@ -15,7 +15,7 @@ describe PrimeNumberGenerator do
   end
 
   it "should return all prime numbers between 1 and 13" do
-  	@prime_generator.generate(1, 13).should eq([1, 2, 3, 5, 7, 11, 13])
+  	@prime_generator.generate(1, 13).should eq([2, 3, 5, 7, 11, 13])
   end
 
   it "should return true for a prime number (17)" do
