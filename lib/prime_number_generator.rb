@@ -1,5 +1,4 @@
 class PrimeNumberGenerator
-
   def initialize prime_number_algorithm
     @strategy = prime_number_algorithm
   end
