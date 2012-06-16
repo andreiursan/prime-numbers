@@ -18,8 +18,12 @@ describe PrimeNumberGenerator do
   	@prime_generator.generate(1, 13).should eq([1, 2, 3, 5, 7, 11, 13])
   end
 
-  it "should return true for a prime number (17)"
+  it "should return true for a prime number (17)" do
+  	@prime_generator.is_prime?(17).should be_true
+  end
 
-  it "should return false if a number isn't prime (18)"
+  it "should return false if a number isn't prime (18)" do
+  	@prime_generator.is_prime?(18).should be_false
+  end
 
 end
