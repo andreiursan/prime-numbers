@@ -5,7 +5,7 @@ class PrimeNumberGenerator
 
   def generate a, b
     primenumber = []
-    (a..b).each do |number|
+    range_helper(a,b).each do |number|
       primenumber << number if @strategy.is_prime? number
     end
     primenumber
@@ -13,5 +13,11 @@ class PrimeNumberGenerator
 
   def is_prime? number
     @strategy.is_prime? number
+  end
+
+private 
+  def range_helper a,b
+    a,b = b,a if a > b
+    (a..b)
   end
 end
