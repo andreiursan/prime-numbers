@@ -1,0 +1,1 @@
+require File.expand_path("../../lib/prime_number_generator.rb", __FILE__)
