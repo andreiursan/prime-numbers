@@ -9,5 +9,4 @@ describe RangeBoundaryException do
       error.class.should == RangeBoundaryException
     end
   end
-  
 end
