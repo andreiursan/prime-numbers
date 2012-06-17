@@ -22,10 +22,11 @@ Or install it yourself as:
 
     primes_generator = PrimeNumbers::PrimeNumberGenerator.new
 
-    prime_generator.is_prime? 7901
+    prime_generator.is_prime? 947
     => true
-    prime_generate.generate 7900, 7920
-    =>
+    
+    prime_generate.generate 3500, 3540
+    => [3511, 3517, 3527, 3529, 3533, 3539] 
 
 
 ## Contributing
