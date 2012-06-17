@@ -21,4 +21,8 @@ describe PrimeNumbers::AlgorithmOneLiner do
     end
   end
 
+  it "should retunr prime numbers in an interval" do
+    @algorithm.generate(7900, 8000).should eq([7901, 7907, 7919, 7927, 7933, 7937, 7949, 7951, 7963, 7993])
+  end
+
 end
