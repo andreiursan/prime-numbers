@@ -1,4 +1,4 @@
-# Prime::Numbers
+# PrimeNumbers
 
 TODO: Write a gem description
 
@@ -18,7 +18,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    require 'prime-numbers'
+
+    primes_generator = PrimeNumbers::PrimeNumberGenerator.new
+
+    prime_generator.is_prime? 7901
+    => true
+    prime_generate.generate 7900, 7920
+    =>
+
 
 ## Contributing
 
