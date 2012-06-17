@@ -1,0 +1,2 @@
+class RangeBoundaryException < Exception
+end
