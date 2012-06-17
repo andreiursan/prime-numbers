@@ -4,7 +4,7 @@ require "prime-numbers/algorithm_one_liner"
 module PrimeNumbers
   class PrimeNumberGenerator
     def initialize algorithm=AlgorithmOneLiner.new
-      @algorithm = prime_number_algorithm
+      @algorithm = algorithm
     end
 
     def generate a, b
