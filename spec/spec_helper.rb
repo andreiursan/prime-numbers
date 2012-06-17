@@ -1,2 +1,2 @@
-require_relative "../lib/prime_number_generator.rb"
-require_relative "../lib/prime_number_algorithm_one_liner.rb"
+require_relative "../lib/prime_numbers.rb"
+require_relative "../lib/prime-numbers/algorithm_one_liner.rb"

@@ -1,10 +1,10 @@
 require 'spec_helper'
 
-describe PrimeNumberAlgorithmOneLiner do
+describe PrimeNumbers::AlgorithmOneLiner do
 
 
   before(:all) do
-    @prime_number_algorithm_one_liner = PrimeNumberAlgorithmOneLiner.new
+    @prime_number_algorithm_one_liner = PrimeNumbers::AlgorithmOneLiner.new
   end
 
   it "should return true for prime numbers" do

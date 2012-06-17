@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe PrimeNumberGenerator do
+describe PrimeNumbers::PrimeNumberGenerator do
 
   before(:all) do
-    @prime_generator = PrimeNumberGenerator.new(PrimeNumberAlgorithmOneLiner.new)
+    @prime_generator = PrimeNumbers::PrimeNumberGenerator.new
   end
 
   it "should respond to message generate" do

@@ -1,5 +1,4 @@
 source :rubygems
 
-group :test do
-  gem "rspec"
-end
+# Specify your gem's dependencies in prime-numbers.gemspec
+gemspec
