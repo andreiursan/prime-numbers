@@ -1,10 +1,10 @@
 require "prime-numbers/version"
-require "prime-numbers/algorithm_one_liner"
+require "prime-numbers/algorithm"
 
 module PrimeNumbers
   class PrimeNumberGenerator
-    def initialize algorithm=AlgorithmOneLiner.new
-      @algorithm = algorithm
+    def initialize algorithm_strategy
+      @algorithm = Algorithm.with_strategy(algorithm_strategy)
     end
 
     def generate a, b
