@@ -3,7 +3,7 @@ require "prime-numbers/algorithms/algorithm"
 require "prime-numbers/errors/range_boundary_exception"
 
 module PrimeNumbers
-  class PrimeNumberGenerator
+  class Generator
     def initialize algorithm_strategy
       @algorithm = Algorithm.with_strategy(algorithm_strategy)
     end

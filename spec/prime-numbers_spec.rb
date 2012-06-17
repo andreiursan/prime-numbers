@@ -3,7 +3,7 @@ require 'spec_helper'
 describe PrimeNumbers::PrimeNumberGenerator do
 
   before(:all) do
-    @prime_generator = PrimeNumbers::PrimeNumberGenerator.new(:one_liner)
+    @prime_generator = PrimeNumbers::Generator.new(:one_liner)
   end
 
   it "should respond to message generate" do
