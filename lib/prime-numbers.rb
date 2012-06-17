@@ -1,5 +1,5 @@
 require "prime-numbers/version"
-require "prime-numbers/algorithm"
+require "prime-numbers/algorithms/algorithm"
 
 module PrimeNumbers
   class PrimeNumberGenerator
