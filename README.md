@@ -41,6 +41,15 @@ Or install it yourself as:
     => [3511, 3517, 3527, 3529, 3533, 3539] 
 
 
+## To Do 
+    1. Add simplecov to the project, s.t. test coverage can be measure
+    2. Add prime number algorithms that can benefit from parallel computing:
+        a. put all prime numbers that have to be checked in queue and have workers that analyze them
+        b. take advantage of ruby 1.9.x fibers implementation
+    3. Add more prime number algorithms to the project.
+    4. Add Benchmarks to show the speed difference between Prime Number Algorithms
+
+
 ## Contributing
 
 1. Fork it
