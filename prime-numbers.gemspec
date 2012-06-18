@@ -5,7 +5,7 @@ Gem::Specification.new do |gem|
   gem.authors       = ["Andrei Ursan"]
   gem.email         = ["hello@andreiursan.com"]
   gem.description   = %q{Prime Numbers Generator}
-  gem.summary       = %q{Simply tells if a number is prime or generates al prime numbers from a provided range}
+  gem.summary       = %q{Simply tells if a number is prime or generates all prime numbers from a provided range}
   gem.homepage      = "https://github.com/andreiursan/prime-numbers"
 
   gem.add_development_dependency "rspec"

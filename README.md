@@ -1,6 +1,6 @@
 # PrimeNumbers
 
-TODO: Write a gem description
+Prime Numbers Generator
 
 ## Installation
 
