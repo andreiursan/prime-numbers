@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe PrimeNumbers::PrimeNumberGenerator do
+describe PrimeNumbers::Generator do
 
   before(:all) do
     @prime_generator = PrimeNumbers::Generator.new(:one_liner)
@@ -19,30 +19,20 @@ describe PrimeNumbers::PrimeNumberGenerator do
   end
 
   it "should handle reverse ranges (20,1) == (1,20)" do
-    begin
-    @prime_generator.generate(20, 1).should eq([2, 3, 5, 7, 11, 13, 17, 19])  
-    raise RangeBoundaryException 
-    rescue RangeBoundaryException => error
-      error.class.should == RangeBoundaryException
-    end
+    primes = @prime_generator.generate(1, 20)
+    @prime_generator.generate(20, 1).should eq(primes)  
   end
 
   it "should raise an error on negtive range boundaries" do
-    begin
-    @prime_generator.generate(20, -2)
-    rescue RangeBoundaryException => error
-      error.should_not eq(nil)
-      error.message.should eq("-2 is an invalid range boundary, please provide a positive integer instead!")
-    end
+    lambda do
+      @prime_generator.generate(20, -2)
+    end.should raise_error(RangeBoundaryException, "-2 is an invalid range boundary, please provide a positive integer instead!")  
   end
 
   it "should raise an error on float numbers range boundaries" do
-    begin
-    @prime_generator.generate(20.5, 2)
-    rescue RangeBoundaryException => error
-      error.should_not eq(nil)
-      error.message.should eq("20.5 is an invalid range boundary, please provide a positive integer instead!")
-    end
+    lambda do
+      @prime_generator.generate(20.5, 2)
+    end.should raise_error(RangeBoundaryException, "20.5 is an invalid range boundary, please provide a positive integer instead!") 
   end
 
   it "should return true for a prime number (17)" do
