@@ -1,5 +1,7 @@
 require "prime-numbers/version"
 require "prime-numbers/algorithms/algorithm"
+require "prime-numbers/algorithms/one_liner"
+require "prime-numbers/algorithms/sieve_of_eratosthenes"
 require "prime-numbers/errors/range_boundary_exception"
 
 module PrimeNumbers
