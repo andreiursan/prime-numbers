@@ -9,7 +9,7 @@ module PrimeNumbers
     end
 
     def is_prime? number
-      number < 2 ? false : ('1' * number) !~ /^1?$|^(11+?)\1+$/
+      2 ** number % number == 2
     end
   end
 end
